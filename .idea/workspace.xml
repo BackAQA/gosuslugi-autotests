@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f0666d6e-fcbb-4642-b510-adde69172e5b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="36wgGaJNunhElJuwX37DdGaGRqu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AppleTest.checkHref.executor": "Run",
+    "JUnit.AppleTest.test1.executor": "Run",
+    "JUnit.AuthorizationTests$NegativeAuthTests.invalidLoginValidPasswordTest.executor": "Run",
+    "JUnit.AuthorizationTests$NegativeAuthTests.invalidPasswordValidLoginTest.executor": "Run",
+    "JUnit.AuthorizationTests$NegativeAuthTests.testWithDifferentPasswords.executor": "Run",
+    "JUnit.AuthorizationTests$NegativeAuthTests.validLoginInvalidPasswordTest.executor": "Run",
+    "JUnit.AuthorizationTests$NegativeAuthTests.validLoginInvalidPasswordTest2.executor": "Run",
+    "JUnit.AuthorizationTests$PositiveAuthTests.modalWindowTest.executor": "Run",
+    "JUnit.AuthorizationTests$PositiveAuthTests.validCredentialsTest.executor": "Run",
+    "JUnit.HhTest.test.executor": "Run",
+    "JUnit.MainPageTest$PositiveAuthTests.modalWindowTest.executor": "Run",
+    "JUnit.MainPageTest$PositiveAuthTests.test1 (1).executor": "Run",
+    "JUnit.MainPageTest$PositiveAuthTests.test1.executor": "Run",
+    "JUnit.MainPageTest$PositiveAuthTests.test2 (1).executor": "Run",
+    "JUnit.MainPageTest$PositiveAuthTests.test2.executor": "Run",
+    "JUnit.MainPageTest$PositiveAuthTests.validCredentialsTest.executor": "Run",
+    "JUnit.MarketTest.test1.executor": "Run",
+    "JUnit.ModalWindow$PositiveAuthTests.test1.executor": "Run",
+    "JUnit.ModalWindow$PositiveAuthTests.test2.executor": "Run",
+    "JUnit.ModalWindow$PositiveAuthTests.test3.executor": "Run",
+    "JUnit.ModalWindow$PositiveAuthTests.test4.executor": "Run",
+    "JUnit.ModalWindow.test1.executor": "Run",
+    "JUnit.NegativeTests.test2.executor": "Run",
+    "JUnit.PositiveTests.test1.executor": "Run",
+    "JUnit.PositiveTests.test2.executor": "Run",
+    "JUnit.RegresTest.test.executor": "Debug",
+    "JUnit.TheCodeFromTheImageTest$PositiveImageTests.enterTheCodeFromTheImageTest.executor": "Run",
+    "JUnit.TranslatorTest.test1.executor": "Run",
+    "JUnit.WebDriverTest.openUrlTest.executor": "Run",
+    "JUnit.WebDriverTest.test1.executor": "Run",
+    "JUnit.WebDriverTest.test2.executor": "Run",
+    "JUnit.WebDriverTest.test3.executor": "Run",
+    "JUnit.WikiTest.executor": "Debug",
+    "JUnit.WikiTest.openAllHrefs.executor": "Debug",
+    "JUnit.WikiTest.ПолучитьУрл.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/admir/IdeaProjects/Admir_Betuganov",
+    "onboarding.tips.debug.path": "C:/Users/admir/IdeaProjects/Oleh_Pendrak/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admir\IdeaProjects\Admir_Betuganov\src\test\java\gosuslugi_autotests" />
+      <recent name="C:\Users\admir\IdeaProjects\Admir_Betuganov\src\планировка" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="driver" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="wiki" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MainPageTest$PositiveAuthTests.modalWindowTest">
+    <configuration name="MainPageTest$PositiveAuthTests.modalWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir Betuganov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gosuslugi_autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gosuslugi_autotests.MainPageTest" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.MainPageTest$PositiveAuthTests" />
+      <option name="METHOD_NAME" value="modalWindowTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NegativeAuthTests.invalidLoginValidPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir Betuganov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gosuslugi_autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="driver.AuthorizationTests" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests.NegativeAuthTests" />
+      <option name="METHOD_NAME" value="invalidLoginValidPasswordTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NegativeAuthTests.invalidPasswordValidLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir Betuganov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gosuslugi_autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="driver.AuthorizationTests" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests.NegativeAuthTests" />
+      <option name="METHOD_NAME" value="invalidPasswordValidLoginTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositiveAuthTests.modalWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir Betuganov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gosuslugi_autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="driver.AuthorizationTests" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests.PositiveAuthTests" />
+      <option name="METHOD_NAME" value="modalWindowTest(org.junit.jupiter.api.TestInfo)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositiveImageTests.enterTheCodeFromTheImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir Betuganov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gosuslugi_autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="driver.TheCodeFromTheImageTest" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.TheCodeFromTheImageTest.PositiveImageTests" />
+      <option name="METHOD_NAME" value="enterTheCodeFromTheImageTest(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainPageTest$PositiveAuthTests.modalWindowTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0666d6e-fcbb-4642-b510-adde69172e5b" name="Changes" comment="" />
+      <created>1765922953786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765922953786</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/планировка/api/RegresTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/планировка/wiki/WikiTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
