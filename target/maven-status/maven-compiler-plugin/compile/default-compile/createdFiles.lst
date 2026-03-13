@@ -1,8 +1,0 @@
-org\example\gosuslugi_autotests\ErrorMessage.class
-org\example\gosuslugi_autotests\ModalWindow.class
-org\example\gosuslugi_autotests\CommonActionsSelenium.class
-org\example\gosuslugi_autotests\MainPage.class
-org\example\gosuslugi_autotests\EnterTheCodeFromTheImage.class
-org\example\gosuslugi_autotests\Config.class
-org\example\gosuslugi_autotests\BasePage.class
-org\example\gosuslugi_autotests\LoginRegistrationPage.class

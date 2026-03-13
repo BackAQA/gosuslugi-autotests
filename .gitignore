@@ -64,3 +64,14 @@ build/
 ### Mac OS ###
 .DS_Store
 master
+target/
+build/
+logs/
+*.log
+*.html
+.idea/
+*.iml
+*.class
+test-output/
+allure-results/
+allure-report/
