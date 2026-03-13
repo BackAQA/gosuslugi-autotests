@@ -1,4 +1,4 @@
-package gosuslugi_autotests;
+package gosuslugi_autotests_cucumber;
 
 import io.qameta.allure.*;
 import lombok.extern.slf4j.Slf4j;
@@ -181,7 +181,7 @@ class AuthorizationTests extends BaseTest {
 @Feature("Модальное окно 'Введите код с картинки'")
 @Owner("Команда тестирования")
 @Slf4j
-class TheCodeFromTheImageTest extends BaseTest{
+class TheCodeFromTheImageTest extends BaseTest {
 
     @Nested
     @DisplayName("Позитивные сценарии")
@@ -197,7 +197,7 @@ class TheCodeFromTheImageTest extends BaseTest{
                 "+79889207429, pass123"
         })
         void enterTheCodeFromTheImageTest(String login, String password){
-            log.info("🔐 Попытка входа {}: {} / {}", login, password);
+            log.info("🔐 Попытка входа {}: {} ", login, password);
             mainPage.clickExtensionsLink().enterEmail(login, password).getErrorText();
         }
     }
@@ -208,7 +208,7 @@ class TheCodeFromTheImageTest extends BaseTest{
 @Feature("Модальное окно")
 @Owner("Команда тестирования")
 @Slf4j
-class ModalWindowTest extends BaseTest{
+class ModalWindowTest extends BaseTest {
 
     @Nested
     @DisplayName("Позитивные сценарии")
@@ -256,7 +256,4 @@ class ModalWindowTest extends BaseTest{
 //@Issue - Ссылка на баг в трекере - @Issue("BUG-456") - связывает тест с багом (если тест падает из-за известного бага)
 //@TmsLink - Ссылка на тест-кейс в Test Management System - @TmsLink("TC-789") - связывает автоматический тест с ручным тест-кейсом
 //
-
-
-
 }

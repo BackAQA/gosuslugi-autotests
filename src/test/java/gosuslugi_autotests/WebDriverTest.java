@@ -197,7 +197,7 @@ class TheCodeFromTheImageTest extends BaseTest{
                 "+79889207429, pass123"
         })
         void enterTheCodeFromTheImageTest(String login, String password){
-            log.info("🔐 Попытка входа {}: {} / {}", login, password);
+            log.info("🔐 Попытка входа {}: {} ", login, password);
             mainPage.clickExtensionsLink().enterEmail(login, password).getErrorText();
         }
     }

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0666d6e-fcbb-4642-b510-adde69172e5b" name="Changes" comment="" />
+    <list default="true" id="f0666d6e-fcbb-4642-b510-adde69172e5b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/tests.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/tests.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +48,7 @@
     "JUnit.AuthorizationTests$PositiveAuthTests.modalWindowTest.executor": "Run",
     "JUnit.AuthorizationTests$PositiveAuthTests.validCredentialsTest.executor": "Run",
     "JUnit.HhTest.test.executor": "Run",
+    "JUnit.MainPageTest$PositiveAuthTests.modalWindowTest (1).executor": "Run",
     "JUnit.MainPageTest$PositiveAuthTests.modalWindowTest.executor": "Run",
     "JUnit.MainPageTest$PositiveAuthTests.test1 (1).executor": "Run",
     "JUnit.MainPageTest$PositiveAuthTests.test1.executor": "Run",
@@ -72,7 +77,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/admir/IdeaProjects/Admir_Betuganov",
@@ -92,81 +97,81 @@
       <recent name="wiki" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainPageTest$PositiveAuthTests.modalWindowTest">
-    <configuration name="MainPageTest$PositiveAuthTests.modalWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Admir Betuganov" />
+  <component name="RunManager" selected="JUnit.ModalWindowTest$PositiveAuthTests.test3">
+    <configuration name="AuthorizationTests$NegativeAuthTests.testWithDifferentPasswords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir_Betuganov" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gosuslugi_autotests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="gosuslugi_autotests.MainPageTest" />
-      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.MainPageTest$PositiveAuthTests" />
-      <option name="METHOD_NAME" value="modalWindowTest" />
+      <option name="PACKAGE_NAME" value="gosuslugi_autotests.AuthorizationTests" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests$NegativeAuthTests" />
+      <option name="METHOD_NAME" value="testWithDifferentPasswords(java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NegativeAuthTests.invalidLoginValidPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Admir Betuganov" />
+    <configuration name="ModalWindowTest$PositiveAuthTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir_Betuganov" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gosuslugi_autotests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="driver.AuthorizationTests" />
-      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests.NegativeAuthTests" />
-      <option name="METHOD_NAME" value="invalidLoginValidPasswordTest(java.lang.String)" />
+      <option name="PACKAGE_NAME" value="gosuslugi_autotests.ModalWindowTest" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.ModalWindowTest$PositiveAuthTests" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NegativeAuthTests.invalidPasswordValidLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Admir Betuganov" />
+    <configuration name="ModalWindowTest$PositiveAuthTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir_Betuganov" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gosuslugi_autotests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="driver.AuthorizationTests" />
-      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests.NegativeAuthTests" />
-      <option name="METHOD_NAME" value="invalidPasswordValidLoginTest(java.lang.String)" />
+      <option name="PACKAGE_NAME" value="gosuslugi_autotests.ModalWindowTest" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.ModalWindowTest$PositiveAuthTests" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveAuthTests.modalWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Admir Betuganov" />
+    <configuration name="ModalWindowTest$PositiveAuthTests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir_Betuganov" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gosuslugi_autotests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="driver.AuthorizationTests" />
-      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests.PositiveAuthTests" />
-      <option name="METHOD_NAME" value="modalWindowTest(org.junit.jupiter.api.TestInfo)" />
+      <option name="PACKAGE_NAME" value="gosuslugi_autotests.ModalWindowTest" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.ModalWindowTest$PositiveAuthTests" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveImageTests.enterTheCodeFromTheImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Admir Betuganov" />
+    <configuration name="TheCodeFromTheImageTest$PositiveImageTests.enterTheCodeFromTheImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir_Betuganov" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gosuslugi_autotests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="driver.TheCodeFromTheImageTest" />
-      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.TheCodeFromTheImageTest.PositiveImageTests" />
+      <option name="PACKAGE_NAME" value="gosuslugi_autotests.TheCodeFromTheImageTest" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.TheCodeFromTheImageTest$PositiveImageTests" />
       <option name="METHOD_NAME" value="enterTheCodeFromTheImageTest(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -175,7 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainPageTest$PositiveAuthTests.modalWindowTest" />
+        <item itemvalue="JUnit.ModalWindowTest$PositiveAuthTests.test3" />
+        <item itemvalue="JUnit.ModalWindowTest$PositiveAuthTests.test2" />
+        <item itemvalue="JUnit.ModalWindowTest$PositiveAuthTests.test1" />
+        <item itemvalue="JUnit.TheCodeFromTheImageTest$PositiveImageTests.enterTheCodeFromTheImageTest" />
+        <item itemvalue="JUnit.AuthorizationTests$NegativeAuthTests.testWithDifferentPasswords" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +204,29 @@
       <updated>1765922953786</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
