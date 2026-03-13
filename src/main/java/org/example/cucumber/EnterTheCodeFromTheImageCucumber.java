@@ -3,9 +3,9 @@ package org.example.cucumber;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class EnterTheCodeFromTheImage extends LoginRegistrationPage {
+public class EnterTheCodeFromTheImageCucumber extends LoginRegistrationPageCucumber {
 
-    public EnterTheCodeFromTheImage(WebDriver driver) {
+    public EnterTheCodeFromTheImageCucumber(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }

@@ -19,11 +19,11 @@ public class BaseTest {
         mainPage.open("https://www.gosuslugi.ru/");
     }
 
-    @AfterEach
+    /*@AfterEach
     public void tearDown() {
         if (driver != null) {
             driver.quit(); // Раскомментируйте, когда нужно закрывать браузер
         }
-    }
+    }*/
 
 }

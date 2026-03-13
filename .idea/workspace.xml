@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0666d6e-fcbb-4642-b510-adde69172e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/tests.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/tests.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cucumber/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cucumber/BasePageCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cucumber/CommonActionsSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cucumber/CommonActionsSeleniumCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cucumber/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cucumber/ConfigCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cucumber/EnterTheCodeFromTheImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cucumber/EnterTheCodeFromTheImageCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cucumber/LoginRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cucumber/LoginRegistrationPageCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cucumber/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cucumber/MainPageCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cucumber/ModalWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cucumber/ModalWindowCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gosuslugi_autotests/LoginRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gosuslugi_autotests/LoginRegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gosuslugi_autotests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gosuslugi_autotests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gosuslugi_autotests_cucumber/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gosuslugi_autotests_cucumber/BaseTestCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gosuslugi_autotests_cucumber/WebDriverTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/планировка/ПервыйАвтотестНаСеленид/AppleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/планировка/ПервыйАвтотестНаСеленид/AppleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +60,7 @@
     "JUnit.AuthorizationTests$NegativeAuthTests.validLoginInvalidPasswordTest2.executor": "Run",
     "JUnit.AuthorizationTests$PositiveAuthTests.modalWindowTest.executor": "Run",
     "JUnit.AuthorizationTests$PositiveAuthTests.validCredentialsTest.executor": "Run",
+    "JUnit.CucumberRunner.executor": "Run",
     "JUnit.HhTest.test.executor": "Run",
     "JUnit.MainPageTest$PositiveAuthTests.modalWindowTest (1).executor": "Run",
     "JUnit.MainPageTest$PositiveAuthTests.modalWindowTest.executor": "Run",
@@ -61,6 +75,9 @@
     "JUnit.ModalWindow$PositiveAuthTests.test3.executor": "Run",
     "JUnit.ModalWindow$PositiveAuthTests.test4.executor": "Run",
     "JUnit.ModalWindow.test1.executor": "Run",
+    "JUnit.ModalWindowTest$PositiveAuthTests.test1.executor": "Run",
+    "JUnit.ModalWindowTest$PositiveAuthTests.test2.executor": "Run",
+    "JUnit.ModalWindowTest$PositiveAuthTests.test3.executor": "Run",
     "JUnit.NegativeTests.test2.executor": "Run",
     "JUnit.PositiveTests.test1.executor": "Run",
     "JUnit.PositiveTests.test2.executor": "Run",
@@ -77,15 +94,20 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/admir/IdeaProjects/Admir_Betuganov",
+    "last_opened_file_path": "C:/Users/admir/IdeaProjects/Admir_Betuganov/src/main/java/org/example/cucumber",
     "onboarding.tips.debug.path": "C:/Users/admir/IdeaProjects/Oleh_Pendrak/src/main/java/org/example/Main.java",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admir\IdeaProjects\Admir_Betuganov\src\main\java\org\example\cucumber" />
+      <recent name="C:\Users\admir\IdeaProjects\Admir_Betuganov\src\test\java\gosuslugi_autotests_cucumber" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admir\IdeaProjects\Admir_Betuganov\src\test\java\gosuslugi_autotests" />
       <recent name="C:\Users\admir\IdeaProjects\Admir_Betuganov\src\планировка" />
@@ -97,8 +119,8 @@
       <recent name="wiki" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ModalWindowTest$PositiveAuthTests.test3">
-    <configuration name="AuthorizationTests$NegativeAuthTests.testWithDifferentPasswords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CucumberRunner">
+    <configuration name="AuthorizationTests$PositiveAuthTests.modalWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Admir_Betuganov" />
       <extension name="coverage">
         <pattern>
@@ -107,9 +129,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gosuslugi_autotests.AuthorizationTests" />
-      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests$NegativeAuthTests" />
-      <option name="METHOD_NAME" value="testWithDifferentPasswords(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.AuthorizationTests$PositiveAuthTests" />
+      <option name="METHOD_NAME" value="modalWindowTest(org.junit.jupiter.api.TestInfo)" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Admir_Betuganov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gosuslugi_autotests_cucumber.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gosuslugi_autotests_cucumber.runner" />
+      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests_cucumber.runner.CucumberRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,29 +199,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheCodeFromTheImageTest$PositiveImageTests.enterTheCodeFromTheImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Admir_Betuganov" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gosuslugi_autotests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gosuslugi_autotests.TheCodeFromTheImageTest" />
-      <option name="MAIN_CLASS_NAME" value="gosuslugi_autotests.TheCodeFromTheImageTest$PositiveImageTests" />
-      <option name="METHOD_NAME" value="enterTheCodeFromTheImageTest(java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CucumberRunner" />
+        <item itemvalue="JUnit.AuthorizationTests$PositiveAuthTests.modalWindowTest" />
         <item itemvalue="JUnit.ModalWindowTest$PositiveAuthTests.test3" />
         <item itemvalue="JUnit.ModalWindowTest$PositiveAuthTests.test2" />
         <item itemvalue="JUnit.ModalWindowTest$PositiveAuthTests.test1" />
-        <item itemvalue="JUnit.TheCodeFromTheImageTest$PositiveImageTests.enterTheCodeFromTheImageTest" />
-        <item itemvalue="JUnit.AuthorizationTests$NegativeAuthTests.testWithDifferentPasswords" />
       </list>
     </recent_temporary>
   </component>

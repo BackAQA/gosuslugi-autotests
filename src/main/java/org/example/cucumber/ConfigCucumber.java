@@ -1,6 +1,6 @@
 package org.example.cucumber;
 
-public class Config {
+public class ConfigCucumber {
     public static final String PLATFORM_AND_BROWSER = "windows_chrome";
 
     /** Для driver.manage().timeouts() Неявное ожидание - Вы задаете общее время, которое WebDriver будет ждать при каждом поиске элемента. Если элемент не найден сразу, драйвер периодически проверяет его наличие в течение заданного времени. Действует на протяжении всей жизни драйвера (или до изменения значения).*/

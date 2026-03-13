@@ -30,7 +30,7 @@ public class LoginRegistrationPage extends BasePage{
     private WebElement href;
 
     public LoginRegistrationPage(WebDriver driver) {
-        super(driver); // Вызываем конструктор BasePage
+        super(driver); // Вызываем конструктор BasePageCucumber
         PageFactory.initElements(driver, this);
     }
 

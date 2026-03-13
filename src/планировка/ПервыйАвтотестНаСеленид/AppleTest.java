@@ -12,12 +12,12 @@ public class AppleTest extends BaseTest{
     @Test
     public void checkHref(){
         //Второй вариант
-        /*Assert.assertTrue(new MainPage(BASE_URL)
+        /*Assert.assertTrue(new MainPageCucumber(BASE_URL)
                 .search(SEARCH_STRING)
                 .searchTextCollections()
                 .contains(EXPECTED_WORD));*/
         /*//Первый вариант
-        String mainPage = new MainPage(BASE_URL).search(SEARCH_STRING).searchTextCollections();
+        String mainPage = new MainPageCucumber(BASE_URL).search(SEARCH_STRING).searchTextCollections();
         Assert.assertTrue(mainPage.contains("iphone-13"));*/
     }
 }

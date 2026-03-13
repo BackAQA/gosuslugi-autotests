@@ -10,13 +10,13 @@ import java.time.Duration;
 
 import static org.example.gosuslugi_autotests.Config.EXPLICIT_WAIT;
 
-public class BasePage {
+public class BasePageCucumber {
     protected WebDriver driver;
-    protected WebDriverWait wait;
+    protected WebDriverWait waitCucumber;
 
-    public BasePage(WebDriver driver) {
+    public BasePageCucumber(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
+        this.waitCucumber = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
     }
 
 
@@ -35,12 +35,12 @@ public class BasePage {
 
     // Ожидает появления элемента на странице (WebElement)
     public void waitForElementVisible(WebElement element) {
-        wait.until(ExpectedConditions.visibilityOf(element));
+        waitCucumber.until(ExpectedConditions.visibilityOf(element));
     }
 
     // Ожидает, когда элемент станет кликабельным (видимым и активным)
     public void waitForElementClickable(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+        waitCucumber.until(ExpectedConditions.elementToBeClickable(element));
     }
 
 

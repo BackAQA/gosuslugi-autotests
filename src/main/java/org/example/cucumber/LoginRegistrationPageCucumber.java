@@ -1,5 +1,6 @@
 package org.example.cucumber;
 
+import ch.qos.logback.core.joran.sanity.Pair;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /** Это страница регистрации и авторизации*/
 @Slf4j
-public class LoginRegistrationPage extends BasePage {
+public class LoginRegistrationPageCucumber extends BasePageCucumber {
 
     @FindBy(xpath = "//button[text()=' Восстановить ']") // Восстановить
     private WebElement recover;
@@ -29,8 +30,8 @@ public class LoginRegistrationPage extends BasePage {
     @FindBy(xpath = "//a[@href=\"https://www.gosuslugi.ru/landing/esia-help\"]") // Куда ещё можно войти с паролем от Госуслуг?
     private WebElement href;
 
-    public LoginRegistrationPage(WebDriver driver) {
-        super(driver); // Вызываем конструктор BasePage
+    public LoginRegistrationPageCucumber(WebDriver driver) {
+        super(driver); // Вызываем конструктор BasePageCucumber
         PageFactory.initElements(driver, this);
     }
 
@@ -48,24 +49,70 @@ public class LoginRegistrationPage extends BasePage {
     @FindBy(xpath = "//button[@class=\"plain-button plain-button_wide\"]") // кнопка 'Войти'
     private WebElement buttonEnter;
 
-    @Step("Ввод email: {email} и пароля: {password}")
-    public LoginRegistrationPage enterEmail(String email, String password) {
+    @Step("Ввод логина : {login}")
+    public LoginRegistrationPageCucumber enterLogin(String login) {
         emailField.clear();
-        emailField.sendKeys(email);
+        emailField.sendKeys(login);
+        return this;
+    }
 
+    @Step("Ввод пароля : {password}")
+    public LoginRegistrationPageCucumber enterPassword(String password) {
         passwordField.clear();
         passwordField.sendKeys(password);
+        return this;
+    }
 
+    public LoginRegistrationPageCucumber enterEbutton() {
         buttonEnter.click();
         return this;
     }
+
+    private String lastErrorMessage;
+
+    public LoginRegistrationPageCucumber messageError(String error){
+        if (error.contains("Неверный логин или пароль")){
+            System.out.println("Валидация отработало успешно, текст ошибки: " + error);
+        } else {
+            System.out.println("Ничего не сработало, сиди и разбирайся");
+        }
+
+        this.lastErrorMessage = errorMessage.getText().trim();
+        return this;
+    }
+
+    public String getLastErrorMessage() {
+        return lastErrorMessage;
+    }
+
+
+//___________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Проверяет, появилось ли сообщение об ошибке с ожидаемым текстом ожидаемый текст ошибки (например "Неверный логин или пароль")
      * @return true если ошибка появилась и текст совпадает
      */
     @Step("Ожидание появления сообщения об ошибке")
-    public LoginRegistrationPage thePresenceOfText(){
+    public LoginRegistrationPageCucumber thePresenceOfText(){
         waitForElementVisible(errorMessage);
         return this;
     }
@@ -74,7 +121,7 @@ public class LoginRegistrationPage extends BasePage {
     @FindBy(css = ".esia-form-container.text-center.mb-20.mb-md-40")
     private WebElement EnterTheCodeFromTheImageWindow;
 
-    public EnterTheCodeFromTheImage windowEnterTheCodeFromTheImage(){
+    public EnterTheCodeFromTheImageCucumber windowEnterTheCodeFromTheImage(){
         log.info("══════════════════════════════════════════");
         log.info("🔍 ПРОВЕРКА ОКНА КАПЧИ");
 
@@ -87,7 +134,7 @@ public class LoginRegistrationPage extends BasePage {
         }
 
         log.info("══════════════════════════════════════════");
-        return new EnterTheCodeFromTheImage(driver);
+        return new EnterTheCodeFromTheImageCucumber(driver);
     }
 
     // Метод для получения текста ошибки (возвращает String)
@@ -110,21 +157,6 @@ public class LoginRegistrationPage extends BasePage {
 
                     log.info("✅ Найдена ошибка: {}", text); // {} = подстановка
 
-                    // Здесь ваш switch/case
-                /*switch (text) {
-                    case "Неверный логин или пароль":
-                        System.out.println("✅ Найден текст ошибки: " + text);
-                        break;
-                    case "Заполните поле":
-                        System.out.println("✅ Найден текст ошибки: " + text);
-                        break;
-                    case "Введите номер телефона, СНИЛС или электронную почту":
-                        System.out.println("✅ Найден текст ошибки: " + text);
-                        break;
-                    default:
-                        windowEnterTheCodeFromTheImage();
-                        break;
-                }*/
                 } else {
                     log.warn("⚠️ Текст не совпадает с известными ошибками");
                 }
@@ -147,7 +179,7 @@ public class LoginRegistrationPage extends BasePage {
     private WebElement unableToLogIn;
     // Метод для открытия модального окна
     @Step("Открытие модального окна помощи")
-    public ModalWindow openHelpModal() {
+    public ModalWindowCucumber openHelpModal() {
         try {
             unableToLogIn.click();
             log.info("✅ Модальное окно открылось");
@@ -155,7 +187,7 @@ public class LoginRegistrationPage extends BasePage {
             log.error("❌ Не удалось открыть модальное окно: {}", e.getMessage());
             throw e;
         }
-        return new ModalWindow(driver);
+        return new ModalWindowCucumber(driver);
     }
 
 }

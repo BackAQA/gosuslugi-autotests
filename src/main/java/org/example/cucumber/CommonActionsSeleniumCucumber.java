@@ -8,10 +8,10 @@ import java.time.Duration;
 
 import static org.example.gosuslugi_autotests.Config.PLATFORM_AND_BROWSER;
 
-public class CommonActionsSelenium {
+public class CommonActionsSeleniumCucumber {
 
     //1 вариант
-    public static WebDriver createDriver() throws InterruptedException {
+    public static WebDriver createDriverCucumber() throws InterruptedException {
 
         WebDriver driver = null;
         switch (PLATFORM_AND_BROWSER) {
@@ -40,41 +40,8 @@ public class CommonActionsSelenium {
 
         // Настройка драйвера
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Config.IMPLICIT_WAIT));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigCucumber.IMPLICIT_WAIT));
 
         return driver;
     }
-
-    //2 вариант
-    /*protected WebDriver webDriver; // protected чтобы был доступен наследникам
-
-    @Before // Выполняется перед каждым тестом
-    public void setUp() {
-        String browser = Constant.WEBDRIVER;
-
-        if (browser.equalsIgnoreCase("chrome")) {
-            webDriver = new ChromeDriver();
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            webDriver = new FirefoxDriver();
-        } else {
-            throw new IllegalArgumentException("Неподдерживаемый браузер: " + browser);
-        }
-
-        webDriver.manage().window().maximize();
-    }
-
-    public void open(String url) {
-        webDriver.get(url);
-    }
-
-    @After // Выполняется после каждого теста
-    public void tearDown() {
-        if (webDriver != null) {
-            webDriver.quit();
-        }
-    }
-
-    public WebDriver getWebDriver() {
-        return webDriver;
-    }*/
 }

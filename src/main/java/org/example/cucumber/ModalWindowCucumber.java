@@ -11,9 +11,9 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ModalWindow extends LoginRegistrationPage {
+public class ModalWindowCucumber extends LoginRegistrationPageCucumber {
 
-    private static final Logger log = LoggerFactory.getLogger(ModalWindow.class);
+    private static final Logger log = LoggerFactory.getLogger(ModalWindowCucumber.class);
 
     @FindBy(xpath = "//button[text()=' Не удаётся войти ']") //  Не удаётся войти
     private WebElement unableToLogIn;
@@ -24,14 +24,14 @@ public class ModalWindow extends LoginRegistrationPage {
     @FindBy(xpath = "//button[@class=\"esia-plain-button esia-plain-button--auto-width\"]") // Закрыть окно через "Закрыть"
     private WebElement closeTheWindow2;
 
-    public ModalWindow(WebDriver driver) {
+    public ModalWindowCucumber(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }
 
     @Step("Закрытие модального окна через крестик")
     // Метод для закрытия через крестик
-    public ModalWindow closeViaCross() {
+    public ModalWindowCucumber closeViaCross() {
         try {
 
             closeTheWindow.click();
@@ -45,7 +45,7 @@ public class ModalWindow extends LoginRegistrationPage {
 
     // Метод для открытия модального окна
     @Step("Открытие модального окна")
-    public ModalWindow openHelpModal2() {
+    public ModalWindowCucumber openHelpModal2() {
         try {
             unableToLogIn.click();
             log.info("✅ Модальное окно открылось");
@@ -58,7 +58,7 @@ public class ModalWindow extends LoginRegistrationPage {
 
     // Метод для закрытия через кнопку "Закрыть"
     @Step("Закрытие модального окна через кнопку 'Закрыть'")
-    public ModalWindow closeViaButton() {
+    public ModalWindowCucumber closeViaButton() {
         try {
             closeTheWindow2.click();
             log.info("✅ Закрыто через кнопку 'Закрыть'");
@@ -71,7 +71,7 @@ public class ModalWindow extends LoginRegistrationPage {
 
     // Метод для открытия модального окна
     @Step("Открытие модального окна (повторное)")
-    public ModalWindow openHelpModal3() {
+    public ModalWindowCucumber openHelpModal3() {
         try {
             unableToLogIn.click();
             log.info("✅ Модальное окно открылось");
@@ -84,7 +84,7 @@ public class ModalWindow extends LoginRegistrationPage {
 
     // Комбинированный метод для теста
     @Step("Тестирование полного цикла: открытие и закрытие модального окна разными способами")
-    public ModalWindow testModalBothWays() {
+    public ModalWindowCucumber testModalBothWays() {
         log.info("🔄 Начинаем тестирование модального окна");
         return this.closeViaCross()
                 .openHelpModal2()
