@@ -13,8 +13,13 @@ public class Hooks {
 
     @Before
     public static void setUp() throws InterruptedException {
-        // Инициализация драйвера перед каждым сценарием
         driver = createDriverCucumber();
+
+        // 2️⃣ Удалить все куки (сбрасываем историю неудачных попыток)
+        driver.manage().deleteAllCookies();
+
+        // 3️⃣ Обновить страницу, чтобы применить сброс
+        driver.navigate().refresh();
     }
 
 //    @After
