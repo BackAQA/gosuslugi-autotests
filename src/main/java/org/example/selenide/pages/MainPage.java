@@ -1,61 +1,53 @@
 package org.example.selenide.pages;
 
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.support.FindBy;
 
-import static com.codeborne.selenide.Selenide.$x;
+import java.util.List;
+import java.util.stream.Collectors;
 
-//// Главная страница сайта appleinsider.ru
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
+import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.page;
 
+//// Главная страница сайта gosuslugi.ru
 public class MainPage {
 
-    /*private final SelenideElement searchButton = $x("//form");*/
-    private final SelenideElement textBoxInput = $x("//input[@type= \"text\"]");
-
-    public MainPage(String url){
-        Selenide.open(url);
+    public MainPage() {
+        // Selenide сам инициализирует элементы
     }
 
+    @FindBy(xpath = "//button[contains(@class, 'login-button')]")  // кнопка для перехода к авторизации
+    private SelenideElement extensionLink;
 
+    //Клик по кнопке для перехода на страницу регистраций
+    public LoginPage clickExtensionLink() {
+        extensionLink.click();
+        return page(LoginPage.class);  // "Создай мне новый объект LoginPage, инициализируй в нём все @FindBy поля и верни его."
+    }
 
+    // Список (ссылки) всех элементов и их имена
+    @FindBy(css = ".mr-24.ng-star-inserted")
+    private List<SelenideElement> allElements;
 
+    public MainPage printAllElements() {
+        // Ждём загрузки меню
+        $$(".mr-24.ng-star-inserted").shouldHave(sizeGreaterThan(0));
+        System.out.println("✅ Меню загружено, элементов: " + $$(".mr-24.ng-star-inserted").size());
+        System.out.println("\n══════════════════════════════════════════");
+        // Прямой CSS-селектор
+        List<String> texts = $$("button p.link-plain, a p.link-plain").texts();
+        System.out.println("   Найдено элементов: " + texts.size());
+        System.out.println("   Тексты элементов: " + texts);
+        System.out.println("\n══════════════════════════════════════════");
+        // Через stream()
+        List<ElementsCollection> texts2 = allElements.stream().map(e -> e.$$("button p.link-plain, a p.link-plain")).collect(Collectors.toList());
+        System.out.println("   Найдено элементов: " + texts2.size());
+        List<String> texts3 = allElements.stream().map(e -> e.getText()).toList();
+        System.out.println("   Тексты элементов: " + texts3);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*public void search(String searchString){
-        textBoxInput.setValue(searchString);
-        textBoxInput.sendKeys(Keys.ENTER);
-    }*/
-
-    //// Псевдокод того, что происходит внутри Selenide:
-    //public void setValue(String text) {
-    //    element.click();       // 1. Сначала кликает на элемент (фокусирует его)
-    //    element.clear();       // 2. Очищает поле если там что-то есть
-    //    element.sendKeys(text); // 3. Вводит текст
-    //}
-
-    //Это ещё один вариант открытия страницы
-    /*public void openWebSite(String url){
-        Selenide.open(url);
-    }*/
-
+        return this;
+    }
 
 }
