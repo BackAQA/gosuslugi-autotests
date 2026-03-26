@@ -4,8 +4,6 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.LoadState;
 import gosuslugi_autotests_playwright.base.BaseTest;
 import org.junit.jupiter.api.Test;
-
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class AuthTest extends BaseTest {
