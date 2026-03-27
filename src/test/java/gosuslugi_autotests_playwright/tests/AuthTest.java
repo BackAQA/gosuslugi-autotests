@@ -28,19 +28,20 @@ public class AuthTest extends BaseTest {
             }
 
             @Test
-            @DisplayName("Получения списка ссылок и название этих ссылок")
+            @DisplayName("Получения списка ссылок и название этих ссылок в меню")
             void test2() {
                 mainPage.allLocatorText();
             }
 
-
-
-
-
+            @Test
+            @DisplayName("Получение списка ссылок всех услуг и название этих услуг")
+            void test3() {
+                mainPage.allLocatorTextServices();
+            }
 
             @Test
             @DisplayName("Переход на страницу регистрации")
-            void test3() {
+            void test5() {
                 mainPage.clickLoginButton();
                 page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("screenshots/test3.png")));
             }

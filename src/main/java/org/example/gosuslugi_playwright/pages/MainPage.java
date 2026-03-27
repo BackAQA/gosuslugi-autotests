@@ -17,6 +17,7 @@ public class MainPage extends BasePage {
         return this;
     }
 
+    //====================================================================================================
     // ========== ВСЕ ЭЛЕМЕНТЫ МЕНЮ ==========
     public MainPage allLocator() {
         List<Locator> items = page.locator("ul li.mr-24").all();
@@ -47,6 +48,35 @@ public class MainPage extends BasePage {
         allText();       // выводим тексты
         return this;
     }
+    //====================================================================================================
+    // ========== ВСЕ ЭЛЕМЕНТЫ УСЛУГ ==========
+    public MainPage allLocatorServices() {
+        List<Locator> items = page.locator("button .ng-star-inserted").all();
+        log.info("📋 Найдено услуг: {}", items.size());
 
+        for (int i = 0; i < items.size(); i++) {
+            log.info("  {}. Услуга {}", i + 1, i);
+        }
+        return this;
+    }
 
+    // ========== ТЕКСТЫ ВСЕХ ЭЛЕМЕНТОВ ==========
+    public MainPage allTextServices() {
+        List<String> items = page.locator("p.color-white").allTextContents();
+        log.info("📝 Тексты услуг:");
+
+        for (int i = 0; i < items.size(); i++) {
+            String text = items.get(i).trim();  // чистим текст
+            log.info("  {}. {}", i + 1, text);
+        }
+        return this;
+    }
+
+    // ========== ВСЕ ВМЕСТЕ ==========
+    public MainPage allLocatorTextServices() {
+        log.info("=== Вывод информации об услугах ===");
+        allLocatorServices();    // выводим ссылки услуг
+        allTextServices();       // выводим название услуг
+        return this;
+    }
 }

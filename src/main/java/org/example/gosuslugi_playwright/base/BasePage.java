@@ -17,6 +17,7 @@ public class BasePage {
             browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setChannel("chrome")
                     .setHeadless(false));
+
             context = browser.newContext();
             page = context.newPage();
         }
