@@ -45,24 +45,6 @@ public class AuthTest extends BaseTest {
                 mainPage.clickLoginButton();
                 page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("screenshots/test3.png")));
             }
-
-
-
-
-            /*//====================================================================================================
-            @Test
-            @DisplayName("Получаем список категории из шапки")
-            void test3() {
-                log.info("📋 Получаем список категорий из шапки сайта");
-
-            }
-            //====================================================================================================
-            @Test
-            @DisplayName("Получаем список категории")
-            void modalWindowTest() {
-                log.info("📋 Получаем список всех категорий");
-
-            }*/
         }
     }
 }
