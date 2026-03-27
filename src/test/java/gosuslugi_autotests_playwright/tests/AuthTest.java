@@ -1,19 +1,67 @@
 package gosuslugi_autotests_playwright.tests;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
 import gosuslugi_autotests_playwright.base.BaseTest;
-import org.junit.jupiter.api.Test;
-
+import lombok.extern.slf4j.Slf4j;
+import org.example.gosuslugi_playwright.pages.MainPage;
+import org.junit.jupiter.api.*;
 import java.nio.file.Paths;
 
+@Slf4j
 public class AuthTest extends BaseTest {
 
-    @Test
-    public void test1() {
-        System.out.println("=== Запуск теста test1 ===");
+    @Nested
+    @DisplayName("🔐 Работа с главной страницей")
+    class MainPageTest {
 
+        @Nested
+        @DisplayName("Позитивные сценарии")
+        @Tag("positive")
+        @Tag("smoke") // позитивные тесты часто входят в smoke
+        class PositiveAuthTests {
+
+            @Test
+            @DisplayName("Открытие главной страницы https://www.gosuslugi.ru/")
+            void test1() {
+                log.info("=== Запуск теста test1 ===");
+                page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("screenshots/test1.png")));
+            }
+
+            @Test
+            @DisplayName("Получения списка ссылок и название этих ссылок")
+            void test2() {
+                mainPage.allLocatorText();
+            }
+
+
+
+
+
+
+            @Test
+            @DisplayName("Переход на страницу регистрации")
+            void test3() {
+                mainPage.clickLoginButton();
+                page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("screenshots/test3.png")));
+            }
+
+
+
+
+            /*//====================================================================================================
+            @Test
+            @DisplayName("Получаем список категории из шапки")
+            void test3() {
+                log.info("📋 Получаем список категорий из шапки сайта");
+
+            }
+            //====================================================================================================
+            @Test
+            @DisplayName("Получаем список категории")
+            void modalWindowTest() {
+                log.info("📋 Получаем список всех категорий");
+
+            }*/
+        }
     }
 }

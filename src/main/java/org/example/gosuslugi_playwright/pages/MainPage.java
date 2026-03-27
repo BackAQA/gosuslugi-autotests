@@ -2,41 +2,52 @@ package org.example.gosuslugi_playwright.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import lombok.extern.slf4j.Slf4j;
 import org.example.gosuslugi_playwright.base.BasePage;
 
+import java.util.List;
+
+@Slf4j
 //// Главная страница сайта gosuslugi.ru
 public class MainPage extends BasePage {
 
-    // Не нужно создавать конструктор, используем статический page из BasePage
-
-    // Локаторы как методы (ленивая инициализация)
-    public static Locator loginButton() {
-        return page.getByText("Войти");
+    // ========== КНОПКА ВХОДА ==========
+    public MainPage clickLoginButton() {
+        page.getByText("Войти").click();
+        return this;
     }
 
-    public static Locator searchInput() {
-        return page.locator("input[type='search']");
+    //====================================================================================================
+    // ========== ВСЕ ЭЛЕМЕНТЫ МЕНЮ ==========
+    public MainPage allLocator() {
+        List<Locator> items = page.locator("ul li.mr-24").all();
+        log.info("📋 Найдено элементов: {}", items.size());
+
+        for (int i = 0; i < items.size(); i++) {
+            log.info("  {}. Элемент {}", i + 1, i);
+        }
+        return this;
     }
 
-    public static Locator personalCabinet() {
-        return page.locator("a:has-text('Личный кабинет')");
+    // ========== ТЕКСТЫ ВСЕХ ЭЛЕМЕНТОВ ==========
+    public MainPage allText() {
+        List<String> items = page.locator("ul li.mr-24").allTextContents();
+        log.info("📝 Тексты элементов:");
+
+        for (int i = 0; i < items.size(); i++) {
+            String text = items.get(i).trim();  // чистим текст
+            log.info("  {}. {}", i + 1, text);
+        }
+        return this;
     }
 
-    // Методы действий
-    public static void clickLoginButton() {
-        loginButton().click();
+    // ========== ВСЕ ВМЕСТЕ ==========
+    public MainPage allLocatorText() {
+        log.info("=== Вывод информации о меню ===");
+        allLocator();    // выводим элементы
+        allText();       // выводим тексты
+        return this;
     }
 
-    public static void search(String query) {
-        searchInput().fill(query);
-        searchInput().press("Enter");
-    }
 
-    public static boolean isLoginButtonVisible() {
-        return loginButton().isVisible();
-    }
-
-    public static String getPageTitle() {
-        return page.title();
-    }
 }
