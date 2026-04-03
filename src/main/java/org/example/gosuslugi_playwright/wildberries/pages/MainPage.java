@@ -2,12 +2,10 @@ package org.example.gosuslugi_playwright.wildberries.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.LoadState;
 import lombok.extern.slf4j.Slf4j;
 import org.example.gosuslugi_playwright.wildberries.base.BasePage;
 
 import java.nio.file.Paths;
-import java.util.List;
 
 @Slf4j
 //// Главная страница сайта gosuslugi.ru
@@ -70,83 +68,50 @@ public class MainPage extends BasePage {
                 .countFileInputs()
                 .uploadPhoto(filePath);
     }
+//==================================================================================================================
+// ========== ПОЛУЧИТЬ ЗНАЧЕНИЕ placeholder ==========
+public String getSearchPlaceholder() {
+    closePopup().acceptCookies();
+    Locator search = page.locator("[id='searchInput']");
+    String placeholder = search.getAttribute("placeholder");
+    log.info("Получаем значение атрибута placeholder: {}", placeholder);
+    return placeholder;
+}
 
-
-
-
-
-
-
-
-
-    /*//====================================================================================================
-    // ========== ВСЕ ЭЛЕМЕНТЫ МЕНЮ ==========
-    public MainPage allLocator() {
-        List<Locator> items = page.locator("ul li.mr-24").all();
-        log.info("📋 Найдено элементов: {}", items.size());
-
-        for (int i = 0; i < items.size(); i++) {
-            log.info("  {}. Элемент {}", i + 1, i);
+    // ========== ПОИСК ==========
+    public Skirts setGetSearch(String query) {
+        // Проверяем и закрываем попап, если он есть
+        Locator closeButton = page.locator("button._close_heicy_55");
+        if (closeButton.count() > 0 && closeButton.isVisible()) {
+            closeButton.click();
+            log.info("🔘 Попап закрыт");
+        } else {
+            log.info("🔘 Попап не найден, пропускаем");
         }
-        return this;
-    }
 
-    // ========== ТЕКСТЫ ВСЕХ ЭЛЕМЕНТОВ ==========
-    public MainPage allText() {
-        List<String> items = page.locator("ul li.mr-24").allTextContents();
-        log.info("📝 Тексты элементов:");
-
-        for (int i = 0; i < items.size(); i++) {
-            String text = items.get(i).trim();  // чистим текст
-            log.info("  {}. {}", i + 1, text);
+        // Проверяем и принимаем куки, если они есть
+        Locator cookiesButton = page.locator("button.cookies__btn");
+        if (cookiesButton.count() > 0 && cookiesButton.isVisible()) {
+            cookiesButton.click();
+            log.info("🍪 Куки приняты");
+        } else {
+            log.info("🍪 Кнопка куки не найдена, пропускаем");
         }
-        return this;
+
+        // Поиск
+        Locator search = page.locator("[id='searchInput']");
+        search.fill(query);
+
+        // Проверяем, что текст ввёлся
+        String actualValue = search.inputValue();
+        boolean isTextEntered = actualValue.equals(query);
+        log.info("Смотрим результат ввода текста в поиск: {}", isTextEntered);
+        search.press("Enter");
+
+        return new Skirts();
+
     }
 
-    // ========== ВСЕ ВМЕСТЕ ==========
-    public MainPage allLocatorText() {
-        log.info("=== Вывод информации о меню ===");
-        allLocator();    // выводим элементы
-        allText();       // выводим тексты
-        return this;
-    }
-    //====================================================================================================
-    // ========== ВСЕ ЭЛЕМЕНТЫ УСЛУГ ==========
-    public MainPage allLocatorServices() {
-        List<Locator> items = page.locator("button .ng-star-inserted").all();
-        log.info("📋 Найдено услуг: {}", items.size());
 
-        for (int i = 0; i < items.size(); i++) {
-            log.info("  {}. Услуга {}", i + 1, i);
-        }
-        return this;
-    }
 
-    // ========== ТЕКСТЫ ВСЕХ ЭЛЕМЕНТОВ ==========
-    public MainPage allTextServices() {
-        List<String> items = page.locator("p.color-white").allTextContents();
-        log.info("📝 Тексты услуг:");
-
-        for (int i = 0; i < items.size(); i++) {
-            String text = items.get(i).trim();  // чистим текст
-            log.info("  {}. {}", i + 1, text);
-        }
-        return this;
-    }
-
-    // ========== ВСЕ ВМЕСТЕ ==========
-    public MainPage allLocatorTextServices() {
-        log.info("=== Вывод информации об услугах ===");
-        allLocatorServices();    // выводим ссылки услуг
-        allTextServices();       // выводим название услуг
-        return this;
-    }
-    //====================================================================================================
-    // ========== ПЕРЕХОД НА СТРАНИЦУ РЕГИСТРАЦИИ ==========
-    public LoginPage registrationPage() {
-        page.getByText("Войти").click();
-        log.info("Переход на страницу регистрации осуществлён");
-        return new LoginPage();
-    }
-*/
 }

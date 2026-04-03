@@ -18,10 +18,9 @@ abstract public class BaseTest extends BasePage {
 
     @AfterAll
     public static void tearDownTest() {
-        System.out.println("Нажмите Enter, чтобы закрыть браузер...");
-        new Scanner(System.in).nextLine();  // ждем нажатия Enter
-        tearDown();
-//        tearDown();  // закрываем браузер
+//        System.out.println("Нажмите Enter, чтобы закрыть браузер...");
+//        new Scanner(System.in).nextLine();  // ждем нажатия Enter
+        tearDown();  // закрываем браузер
     }
 
 }

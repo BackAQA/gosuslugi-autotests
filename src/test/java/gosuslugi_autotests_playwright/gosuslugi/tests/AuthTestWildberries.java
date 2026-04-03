@@ -1,7 +1,6 @@
 package gosuslugi_autotests_playwright.gosuslugi.tests;
 
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.LoadState;
 import gosuslugi_autotests_playwright.wildberries.base.BaseTest;
 import lombok.extern.slf4j.Slf4j;
 import org.example.gosuslugi_playwright.wildberries.pages.MainPage;
@@ -77,31 +76,5 @@ public class AuthTestWildberries extends BaseTest {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 }
